@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  width: 100vw;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  border-color: red;
+  height: 90vh;
+  max-height: 50vh;
+}
+
+.numbers {
+  min-width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.operators {
+  text-align: center;
+  border-color: yellow;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.display {
+  text-align: right;
+  padding-top: 70%;
+  padding-bottom: 5px;
+  padding: 5px;
+  min-height: 10vh;
+}

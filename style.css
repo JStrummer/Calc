@@ -1,27 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
-  width: 100vw;
 }
 
 div {
+  padding-top: 10px;
+}
+
+.calc {
+  max-width: 50vh;
+  padding: 0;
+}
+
+.display {
+  padding-right: 5px;
+  text-align: right;
+  font-family: monospace;
+  font-size: 2rem;
+  min-height: 10vh;
   border: 1px solid black;
+  border-bottom: 3px;
+  border-bottom-style: double;
+  margin: 0;
 }
 
 .keyboard {
+  padding: 0;
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 17fr 3fr;
   height: 90vh;
   max-height: 50vh;
+  border: 1px solid black;
+  border-top: 0.5px;
+  margin: 0;
 }
 
 .numbers {
-  min-width: 50vw;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
 }
 
+#comma {
+  font-size: 1.3rem;
+}
+
+#time {
+  font-family: sans-serif;
+  font-size: 0.7rem;
+}
+
 .operators {
+  padding: 0;
   text-align: center;
   display: grid;
   grid-template-rows: repeat(5, 1fr);
@@ -30,16 +67,4 @@ div {
 .op, #CE {
   border: none;
   background-color: lightgrey;
-}
-
-.display {
-  text-align: right;
-  padding-top: 70%;
-  padding-bottom: 5px;
-  padding: 5px;
-  min-height: 10vh;
-}
-
-.num {
-  padding-bottom: 0;
 }
